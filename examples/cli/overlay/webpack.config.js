@@ -6,5 +6,11 @@ const { setup } = require('../../util');
 
 module.exports = setup({
   context: __dirname,
-  entry: './app.js'
+  entry: './app.js',
+  devServer: {
+    overlay: {
+      warnings: true,
+      errors: true
+    }
+  }
 });
