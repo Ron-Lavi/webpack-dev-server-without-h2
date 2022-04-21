@@ -4,9 +4,7 @@
 // They, in turn, got inspired by webpack-hot-middleware (https://github.com/glenjamin/webpack-hot-middleware).
 
 const ansiHTML = require('ansi-html');
-const Entities = require('html-entities').AllHtmlEntities;
-
-const entities = new Entities();
+const Entities = require('html-entities');
 
 const colors = {
   reset: ['transparent', 'transparent'],
@@ -101,7 +99,7 @@ function showMessageOverlay(message) {
     div.innerHTML = `<span style="color: #${
       colors.red
     }">Failed to compile.</span><br><br>${
-      ansiHTML(entities.encode(message))}`;
+      ansiHTML(Entities.encode(message))}`;
   });
 }
 
