@@ -1,6 +1,6 @@
 {
   "name": "webpack-dev-server-without-h2",
-  "version": "2.11.8",
+  "version": "2.11.9",
   "description": "An hack for disabling http2 for webpack-dev-server v2.11 for node > v10",
   "license": "MIT",
   "repository": "webpack/webpack-dev-server",
